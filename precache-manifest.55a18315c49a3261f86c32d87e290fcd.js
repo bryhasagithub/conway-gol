@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "60c3ecd48b681e2a4fff68bda280ad28",
+    "revision": "1159eaf4f1f28bc9260c262a47605992",
     "url": "/conway-gol/index.html"
   },
   {
-    "revision": "15d6404410c364165976",
+    "revision": "82f301d004dd4c8bff74",
     "url": "/conway-gol/static/css/main.050e8e65.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/conway-gol/static/js/2.a99e79a0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "15d6404410c364165976",
-    "url": "/conway-gol/static/js/main.c8e9f194.chunk.js"
+    "revision": "82f301d004dd4c8bff74",
+    "url": "/conway-gol/static/js/main.a56eafcc.chunk.js"
   },
   {
     "revision": "365f8292dac9a1f590a2",
