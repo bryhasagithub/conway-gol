@@ -2,7 +2,10 @@
 
 Conway's Game of Life is a cellular automaton "game" which evolves over time from simple patterns and a simple set of rules. You will need to implement these rules and display the results to the user.
 
-## Rules of game:
+### Live Demo here:  
+You can check out the working app [here](https://bryhasagithub.github.io/conway-gol/)
+
+## Rules :
 - Every cell interacts with it's 8 neighbours
   - neighbors: cells horizontally, vertically, or diagonally adjacent
 - At each step in time (generation) the following transitions occur:
