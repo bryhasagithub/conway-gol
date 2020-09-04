@@ -16,7 +16,7 @@ You can check out the working app [here](https://bryhasagithub.github.io/conway-
   - any live cell with more than 3 living neighbors dies (overcrowded)
     - if (living_neighbors > 3) this.cell = dead
   - any dead cell with exactly 3 live neighbours becomes a live cell (as if by reproduction)****
-    - if (this.cell.state == "dead" && living_neighbors == 3) this.cell = dead
+    - if (this.cell.state == "dead" && living_neighbors == 3) this.cell = alive
 
 ## Tech Stack
 - React webapp created with `create-react-app` 

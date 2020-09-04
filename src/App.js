@@ -158,23 +158,33 @@ class App extends Component {
       });
     }
   }
-
+  
   playFn = () => {
     let init_board = this.state.gridArray;
-    let count;
+    let neighborCount;
     for(let i = 0; i < this.state.rows; i++){
       for(let j = 0; j < this.state.cols; j++){
-        count = 0;
+        neighborCount = 0;
         if(i > 0)
-          count += this.state.gridArray[i - 1].slice(j - 1, j + 2).filter(Boolean).length;
+        // checks neighbors below 
+          neighborCount += this.state.gridArray[i - 1].slice(j - 1, j + 2).filter(Boolean).length;
         if(i < this.state.rows - 1)
-          count += this.state.gridArray[i + 1].slice(j - 1, j + 2).filter(Boolean).length;
+        // checks neighbors above
+          neighborCount += this.state.gridArray[i + 1].slice(j - 1, j + 2).filter(Boolean).length;
+        // checks neighbors above to the right
         if(this.state.gridArray[i][j + 1])
-          count++;
+          neighborCount++;
+        // checks neighbors above to the left
         if(this.state.gridArray[i][j - 1])
-          count++;
-        if(this.state.gridArray[i][j] && (count < 2 || count > 3)) init_board[i][j] = false;
-        if(!this.state.gridArray[i][j] && count === 3) init_board[i][j] = true;
+          neighborCount++;
+
+        // dead from overcrowded or underpopulation
+        if(this.state.gridArray[i][j] && (neighborCount < 2 || neighborCount > 3)) init_board[i][j] = false;
+        // alive if living box 2 or 3 neighbors
+        if(this.state.gridArray[i][j] && (neighborCount === 2 || neighborCount === 3)) init_board[i][j] = true;
+        // alive if dead box has 3 living neighbors
+        if(this.state.gridArray[i][j] === false && neighborCount === 3) init_board[i][j] = true;
+
       }
     }
     this.setState({
