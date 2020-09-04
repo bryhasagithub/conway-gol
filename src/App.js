@@ -75,7 +75,7 @@ class App extends Component {
   }
 
   selectBox = (row, col) => {
-    let gridCopy = cloneArray( Array(this.state.rows).fill().map(() => Array(this.state.cols).fill(false)));
+    let gridCopy = cloneArray(this.state.gridArray);
     gridCopy[row][col] = !gridCopy[row][col];
     this.setState({
       gridArray: gridCopy
