@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/conway-gol/static/css/main.050e8e65.chunk.css",
+    "main.js": "/conway-gol/static/js/main.c8e9f194.chunk.js",
+    "main.js.map": "/conway-gol/static/js/main.c8e9f194.chunk.js.map",
+    "runtime-main.js": "/conway-gol/static/js/runtime-main.b1216ce1.js",
+    "runtime-main.js.map": "/conway-gol/static/js/runtime-main.b1216ce1.js.map",
+    "static/js/2.a99e79a0.chunk.js": "/conway-gol/static/js/2.a99e79a0.chunk.js",
+    "static/js/2.a99e79a0.chunk.js.map": "/conway-gol/static/js/2.a99e79a0.chunk.js.map",
+    "index.html": "/conway-gol/index.html",
+    "precache-manifest.98b87028484622dcd298dd5ccc8d3c1b.js": "/conway-gol/precache-manifest.98b87028484622dcd298dd5ccc8d3c1b.js",
+    "service-worker.js": "/conway-gol/service-worker.js",
+    "static/css/main.050e8e65.chunk.css.map": "/conway-gol/static/css/main.050e8e65.chunk.css.map",
+    "static/js/2.a99e79a0.chunk.js.LICENSE.txt": "/conway-gol/static/js/2.a99e79a0.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/conway-gol/static/media/Montserrat-Regular.ee653992.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b1216ce1.js",
+    "static/js/2.a99e79a0.chunk.js",
+    "static/css/main.050e8e65.chunk.css",
+    "static/js/main.c8e9f194.chunk.js"
+  ]
+}
