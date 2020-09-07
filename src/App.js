@@ -160,7 +160,7 @@ class App extends Component {
   }
   
   playFn = () => {
-    let init_board = this.state.gridArray;
+    let init_board = this.state.gridArray.map((x) => [...x]);
     let neighborCount;
     for(let i = 0; i < this.state.rows; i++){
       for(let j = 0; j < this.state.cols; j++){
